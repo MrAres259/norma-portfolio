@@ -1,0 +1,66 @@
+.header {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactInfoCard {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.infoItem {
+  margin-bottom: 2rem;
+}
+
+.infoTitle {
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-playfair), serif;
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}

@@ -1,0 +1,51 @@
+.aboutHeader {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutText p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.aboutStats {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-background-alt);
+  padding: 3rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  font-family: var(--font-playfair), serif;
+  font-size: 3rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.statLabel {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .aboutStats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
